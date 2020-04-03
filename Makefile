@@ -13,3 +13,11 @@ pypi:
 	pip3 install twine wheel
 	python3 setup.py sdist bdist_wheel
 	twine upload dist/*
+
+pypi-test:
+	pip3 install twine wheel
+	python3 setup.py sdist bdist_wheel
+	twine upload --repository testpypi dist/*
+
+clean:
+	rm dist/*
