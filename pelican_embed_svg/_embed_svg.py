@@ -77,7 +77,6 @@ def _handle_imgs(soup, imgs, output_path, root_url, set_fill):
     modified = False
 
     for img in imgs:
-        print (img)
         src = img['src']
         if src.endswith('.svg'):
             if root_url and src.startswith(root_url):
