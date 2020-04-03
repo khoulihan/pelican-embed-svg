@@ -1,6 +1,6 @@
 # pelican-embed-svg
 
-[Pelican](https://blog.getpelican.com/) plugin for embedding SVG images/icons at generation time. The plugin currently supports FontAwesome 5 icons specified using <i> tags as well as arbitrary SVG image files.
+[Pelican](https://blog.getpelican.com/) plugin for embedding SVG images/icons at generation time. The plugin currently supports FontAwesome 5 icons specified using `<i>` tags as well as arbitrary SVG image files.
 
 Copyright (c) 2020 by Kevin Houlihan
 
