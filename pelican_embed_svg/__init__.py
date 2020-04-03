@@ -1,7 +1,7 @@
 # pelican_embed_svg
 
 __title__ = 'pelican_embed_svg'
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 __author__ = 'Kevin Houlihan'
 __credits__ = ["Kevin Houlihan", ]
 __maintainer__ = "Kevin Houlihan"
