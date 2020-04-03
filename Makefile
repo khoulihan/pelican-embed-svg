@@ -6,7 +6,7 @@ uninstall:
 	pip3 uninstall pelican-embed-svg
 
 build:
-	pip install wheel
+	pip3 install wheel
 	python3 setup.py sdist bdist_wheel
 
 pypi:
