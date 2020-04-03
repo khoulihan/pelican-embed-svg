@@ -28,7 +28,7 @@ If you want to use [FontAwesome](https://fontawesome.com/) icons then you will n
 
 SVG images to embed can be specified in three ways in your templates.
 
-### FontAwsome <i> tags
+### FontAwsome `<i>` tags
 
 `<i>` tags with base FontAwesome classes (`fas`, `fab` etc.) and an additional class specifying the icon.
 
@@ -38,7 +38,7 @@ SVG images to embed can be specified in three ways in your templates.
 
 All the classes specified will be copied to the embedded `<svg>` element in the output.
 
-### Custom <i> tags
+### Custom `<i>` tags
 
 `<i>` tags with the class `pi`, and an additional class specifying the name of the icon.
 
@@ -50,7 +50,7 @@ This will embed the first file named my-heart.svg that is found in your project 
 
 All the classes specified will be copied to the embedded `<svg>` element in the output.
 
-### <img> tags
+### `<img>` tags
 
 `<img>` tags with `src` attributes that specify svg files.
 
@@ -70,7 +70,7 @@ By default, FontAwesome icons are looked for in a directory called `font-awesome
 
 When specifying icons using `<i>` tags and the `pi` class, by default the output directory is searched for the first svg file that matches. However, it is not strictly necessary for the svg files to be included in the output, so if you have them stored somewhere else the path can be specified using the `PES_SVG_ICON_PATH` setting.
 
-### <img> embedding
+### `<img>` embedding
 
 If you don't want to process `<img>` tags then that can be turned off using the `PES_EMBED_IMG_TAGS` setting:
 
