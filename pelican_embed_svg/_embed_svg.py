@@ -114,9 +114,11 @@ def _process_file(f):
             if src.endswith('.svg'):
                 if _root_url and src.startswith(_root_url):
                     src = src[len(_root_url):]
-                src = src.lstrip('/')
-                src = _output_path / src
-                svg_element = _load_svg(src)
+
+                # Correctly resolve the path to the SVG relative to the HTML file
+                svg_path = (f.parent / src).resolve()
+
+                svg_element = _load_svg(svg_path)
                 if svg_element:
                     classes = img.get('class', None)
                     svg_element.svg['class'] = classes
